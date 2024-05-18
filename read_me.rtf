@@ -1,0 +1,86 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red12\green12\blue12;}
+{\*\expandedcolortbl;;\cssrgb\c5098\c5098\c5098;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid101\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid102\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid201\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid202\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa320\partightenfactor0
+
+\f0\fs48 \cf2 \expnd0\expndtw0\kerning0
+Summary\
+\pard\pardeftab720\sa400\partightenfactor0
+
+\fs32 \cf2 This code is a tool for analyzing the online presence of enterprises by identifying common misspellings of given keywords, finding the official website URLs of provided enterprise names, and scraping data from those websites to determine occurrences of the misspelled keywords.\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs48 \cf2 Libraries Used\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa160\partightenfactor0
+\ls1\ilvl0
+\fs32 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+re: Regular expressions module used for string manipulation.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+matplotlib.pyplot: Library for creating static, animated, and interactive visualizations in Python.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+openai.OpenAI: Library for interfacing with the OpenAI API, used for text completion and generation tasks.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+apify_client.ApifyClient: Client for the Apify API, used for web scraping tasks.\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs48 \cf2 Functions\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa400\partightenfactor0
+\ls2\ilvl0
+\fs32 \cf2 \kerning1\expnd0\expndtw0 {\listtext	1	}\expnd0\expndtw0\kerning0
+find_typos(keyword_list)\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa160\partightenfactor0
+\ls2\ilvl1\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Input: List of keywords\
+\ls2\ilvl1\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Output: List of misspellings generated using OpenAI API\
+\ls2\ilvl1\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Description: Generates 5 misspellings for each keyword provided in the list using the GPT-3.5 model.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa400\partightenfactor0
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	2	}\expnd0\expndtw0\kerning0
+find_websites(enterprise_list)\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa160\partightenfactor0
+\ls2\ilvl1\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Input: List of enterprise names\
+\ls2\ilvl1\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Output: List of official website URLs\
+\ls2\ilvl1\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Description: Uses the OpenAI API to find the official homepage URLs for each enterprise provided in the list.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa400\partightenfactor0
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	3	}\expnd0\expndtw0\kerning0
+scrape_data(typo_list, websites)\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa160\partightenfactor0
+\ls2\ilvl1\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Input: List of misspellings and list of website URLs\
+\ls2\ilvl1\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Output: List of occurrence counts for each misspelling on each website\
+\ls2\ilvl1\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Description: Scrapes each website for occurrences of each misspelling in the provided list and returns the counts.\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs48 \cf2 Usage\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa160\partightenfactor0
+\ls3\ilvl0
+\fs32 \cf2 \kerning1\expnd0\expndtw0 {\listtext	1	}\expnd0\expndtw0\kerning0
+Run the script.\
+\ls3\ilvl0\kerning1\expnd0\expndtw0 {\listtext	2	}\expnd0\expndtw0\kerning0
+Input enterprise names one at a time until finished.\
+\ls3\ilvl0\kerning1\expnd0\expndtw0 {\listtext	3	}\expnd0\expndtw0\kerning0
+Input keywords one at a time until finished.\
+\ls3\ilvl0\kerning1\expnd0\expndtw0 {\listtext	4	}\expnd0\expndtw0\kerning0
+Select an insight request option:\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sa160\partightenfactor0
+\ls3\ilvl1\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Enter "1" for the number of occurrences of misspelled keywords.\
+\ls3\ilvl1\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Enter "2" to create a custom insight request.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa160\partightenfactor0
+\ls3\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	5	}\expnd0\expndtw0\kerning0
+View the results either as a bar chart showing occurrence counts for each misspelling per enterprise or as a response to a custom insight request.\
+}

@@ -5,7 +5,7 @@ import seaborn as sns
 import pandas as pd
 
 ssl._create_default_https_context = ssl._create_unverified_context
-OPENAI_API_KEY = "sk-proj-5gE0qduJ4m1YbcUDoWDMT3BlbkFJdDjnMG3THJQz0Z963Li0"
+OPENAI_API_KEY = "" #your api key here
 
 text_gen = llm("openai")
 lida = Manager(text_gen = llm("openai", api_key = OPENAI_API_KEY)) 

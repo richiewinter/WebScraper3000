@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 from openai import OpenAI
 from apify_client import ApifyClient
 
-OPENAI_API_KEY = "sk-proj-5gE0qduJ4m1YbcUDoWDMT3BlbkFJdDjnMG3THJQz0Z963Li0"
-APIFY_API_KEY = "apify_api_Gyr0m7YWZ3BeFZfGX3bkelJEXjcZGC3ZYyyi"
+OPENAI_API_KEY = "" #your api key here
+APIFY_API_KEY = "" #your api key here
 
 gpt_client = OpenAI(api_key = OPENAI_API_KEY)
 apify_client = ApifyClient(APIFY_API_KEY)
